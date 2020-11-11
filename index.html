@@ -23,7 +23,7 @@
 		const btn = document.getElementById('btn');
 		canvas = document.getElementById('canvas');
 		ctx = canvas.getContext("2d");
-
+		
 		ctx.moveTo(150,300);
 		ctx.lineTo(150,0);
 		ctx.moveTo(0,150);
@@ -32,7 +32,7 @@
 		
 		function move(i, expression){
 			let x = i;
-			let y = JSON.parse(JSON.stringify(expression))
+			let y = (expression)
 			// ctx.fillRect(x * 5 + 150, - y * 5 + 150, 1, 1);
 			// ctx.moveTo(x * 5 + 150, - y * 5 + 150);
 			ctx.lineTo(x * 10 + 150, - y * 10 + 150);
